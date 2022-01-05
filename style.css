@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #101010;
+
+}
+
+#header{
+    height: 6rem;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    background: #f5f5f5;
+    color: #111111;
+
+    border-radius: 5px 5px 0 0;
+}
+
+
+.calculos, .total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header #operationsSpan{
+    font-size: 0.9rem;
+    color: rgb(73, 72, 72);
+}
+
+#header #totalSpan{
+    font-size: 2.5rem;
+}
+
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.button{
+    background: #dcdcdc;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover{
+    filter: brightness(1.1);
+}
+
+.button.operation{
+    background: #d3d3d3;
+}
+
+.button.operation:hover{
+    filter: brightness(0.8);
+
+}
+
+.button:nth-child(17){
+    border-radius: 0 0 0 5px;
+}

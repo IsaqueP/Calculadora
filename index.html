@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div id="calculadora">
+        <header id="header">
+
+            <div class="calculos">
+                <span id="operationsSpan"></span>
+            </div>
+            <div class="total">
+                <span id="totalSpan"></span>
+            </div>
+
+        </header>
+
+        <main id="main">
+            <div 
+                class="button operation" 
+                onclick="removeAll()">C
+            </div>
+            <div 
+                class="button operation" 
+                onclick="calcular('%')">%
+            </div>
+            <div 
+                class="button operation" 
+                onclick="calcular('/')">/
+            </div>
+            <div 
+                class="button operation" 
+                onclick="calcular('x')">x
+            </div>
+            <div 
+                class="button" 
+                id="number7" 
+                onclick="add('7')">7
+            </div>
+            <div 
+                class="button" 
+                id="number8" 
+                onclick="add('8')">8
+            </div>
+            <div 
+                class="button" 
+                onclick="add('9')">9
+            </div>
+            <div 
+                class="button operation" 
+                onclick="calcular('-')">-
+            </div>
+            <div 
+                class="button" 
+                onclick="add('4')">4
+            </div>
+            <div 
+                class="button" 
+                onclick="add('5')">5
+            </div>
+            <div 
+                class="button" 
+                onclick="add('6')">6
+            </div>
+            <div 
+                class="button operation" 
+                id="somar" 
+                onclick="calcular('+')">+
+            </div>
+            <div 
+                class="button" 
+                onclick="add('1')">1
+            </div>
+            <div 
+                class="button" 
+                onclick="add('2')">2
+            </div>
+            <div 
+                class="button" 
+                onclick="add('3')">3
+            </div>
+            <div 
+                class="button operation" i
+                d="resultado" 
+                onclick="calcularTotal()">=
+            </div>
+            <div 
+                class="button" 
+                onclick="add('0')">0
+            </div>
+            <div 
+                class="button" 
+                onclick="add('.')">.
+            </div>
+            <div 
+                class="button" 
+                onclick="remove()">del
+            </div>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
